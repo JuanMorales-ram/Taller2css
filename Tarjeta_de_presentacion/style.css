@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+
+.Tarjeta_de_presentación{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contenedor_del_boton{
+   
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    
+}
+
+.boton_fijo{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.boton_fijo:hover {
+    box-shadow: 0 0 10px #152b3c, 0 0 20px #4c89af;
+    transform: scale(1.1);
+
+}
+
+.imagen_representativa{
+    width: 80px;                 /* Un poco más pequeña */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;                  /* Más arriba */
+    right: -20px;                /* Más hacia la derecha */
+    border: 4px solid white;     /* Borde blanco para separar del fondo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: white;    /* Fondo blanco por si la imagen tiene fondo transparente */
+    z-index: 1;  
+   
+}
+
+.imagen_representativa:hover{
+    transform: scale(1.1);
+
+}
+
+.titulo_tarjeta{
+    font-size: 1.5rem; /* Tamaño más pequeño */
+    margin-top: 20px;
+    margin-right: 60px; /* Deja espacio para la imagen */
+    margin-left: 60px;
+    align-items: center;
+    text-align: center;
+}

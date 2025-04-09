@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.caja{
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contenedor_mayor{
+    border: 2px solid black;
+    width: 715px;
+    height: 600px;
+    position: relative;
+    margin: 50px auto ;
+}
+
+.contenedor{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border:  2px solid black;
+    margin: 50px auto;
+}
+
+.Caja1{
+    
+    background-color: crimson;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+    
+.Caja2{
+    position: absolute;
+    background-color: chartreuse;
+    bottom: 20px;
+    right: 20px;
+}
+    
+.Caja3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 2px solid black;
+    background-color: blueviolet;
+}
+    
