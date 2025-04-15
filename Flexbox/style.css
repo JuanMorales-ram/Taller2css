@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  
+  .barraNavegacion {
+    background-color: #333;
+    padding: 10px 0;
+    border: 1px solid #000;
+  }
+  
+  .lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+  
+  .lista li {
+    margin: 0 20px;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .lista li:hover {
+    color: firebrick;
+  }
+  
+  /* SECCIÓN DE TARJETAS */
+  .seccionTarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+  }
+  
+  .contenedorTarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  
+  .contenedorTarjetas > div {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .contenedorTarjetas > div:hover {
+    transform: translateY(-5px);
+  }
+  
+  .emojiCaja, .emojiServicios, .emojiIdeas {
+    font-size: 40px;
+  }
+  
+  /* MEDIA QUERY: menú vertical en pantallas pequeñas */
+  @media (max-width: 600px) {
+    .lista {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lista li {
+      margin: 10px 0;
+    }
+  }
+  
