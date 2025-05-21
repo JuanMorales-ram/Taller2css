@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de JavaScript - Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Taller de JavaScript - Manejo de Eventos</h1>
+
+    <!-- Ejemplo 1: Click para cambiar color -->
+    <section>
+        <h2>Ejemplo 1: Click para cambiar color</h2>
+        <div id="box1" class="box" style="background-color: lightgray;"></div>
+        <button id="btnColor">Cambiar color</button>
+    </section>
+
+    <!-- Ejemplo 2: Mouseover para mostrar mensaje -->
+    <section>
+        <h2>Ejemplo 2: Mouseover para mostrar mensaje</h2>
+        <div id="box2" class="box" style="background-color: rgb(238, 144, 230);"></div>
+        <p id="msgHover" class="msg"></p>
+    </section>
+
+    <!-- Ejemplo 3: Contador de caracteres (input) -->
+    <section>
+        <h2>Ejemplo 3: Contador de caracteres (input)</h2>
+        <input type="text" id="inputTexto" placeholder="Escribe algo...">
+        <p id="contador" class="msg">Caracteres escritos: 0</p>
+    </section>
+
+    <!-- Ejemplo 4: Mostrar valor seleccionado (change) -->
+    <section>
+        <h2>Ejemplo 4: Mostrar valor seleccionado (change)</h2>
+        <select id="selectOpciones">
+            <option value="">Selecciona una opción</option>
+            <option value="Café">Café</option>
+            <option value="Alcohol">Alcohol</option>
+            <option value="Cigarillo">Cigarillo</option>
+        </select>
+        <p id="opcionSeleccionada" class="msg"></p>
+    </section>
+
+    <!-- Ejemplo 5: Doble click para agrandar -->
+    <section>
+        <h2>Ejemplo 5: Doble click para agrandar</h2>
+        <div id="box3" class="box" style="background: rgb(80, 83, 255);"></div>
+    </section>
+
+    <!-- Ejercicio 1: keydown — Mostrar tecla presionada -->
+    <section>
+        <h2>Ejercicio 1: Evento keydown – Mostrar tecla presionada</h2>
+        <input type="text" id="inputTecla" placeholder="Presiona una tecla...">
+        <p id="teclaPresionada" class="msg"></p>
+    </section>
+
+    <!-- Ejercicio 2: Eventos focus y blur – Cambiar borde -->
+    <section>
+        <h2>Ejercicio 2: Eventos focus y blur – Cambiar borde</h2>
+        <input type="text" id="inputBorde" placeholder="Haz clic aquí...">
+    </section>
+
+    <!-- Ejercicio 3: contextmenu — Bloquear clic derecho -->
+     <!--desplegar la ventana en el navegador para poder ver la advertencia-->
+    <section>
+        <h2>Ejercicio 3: contextmenu — Bloquear clic derecho</h2>
+        <div id="box4" class="box" style="background: #596cb6;">
+            <p style="text-align: center; color: white; line-height: 100px;">Clic derecho aquí</p>
+        </div>
+    </section>
+
+    <!-- Ejercicio 4: mouseleave — Restaurar color cuando el mouse sale -->
+    <section>
+        <h2>Ejercicio 4: mouseleave — Restaurar color cuando el mouse sale</h2>
+        <div id="box5" class="box" style="background: #e74c3c;"></div>
+    </section>
+
+    <!-- Ejercicio 5: keyup — Validar si se escribió una palabra específica -->
+    <section>
+        <h2>Ejercicio 5: keyup — Validar si se escribió "malboro"</h2>
+        <input type="text" id="inputValidar" placeholder="Escribe 'malboro'...">
+        <p id="validacion" class="msg"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
